@@ -4,7 +4,7 @@ import { Carousel } from "react-responsive-carousel";
 
 export default function Carrousels() {
   return (
-    <div className="w-screen h-screen">
+    <div className="w-screen h-[80vh]">
       <Carousel 
         autoPlay 
         infiniteLoop 
@@ -14,34 +14,34 @@ export default function Carrousels() {
         transitionTime={500}
       >
         {/* Slide 1 - Présentation */}
-        <div>
+        <div className="relative h-[80vh]">
           <img 
             src="/assets/1.jpeg" 
             alt="Slide 1" 
-            className="w-screen h-screen object-cover" 
+            className="object-cover w-full h-full" 
           />
-          <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center px-4">
-            <h1 className="text-white text-5xl font-bold mb-4">
+          <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center bg-black/50">
+            <h1 className="mb-4 text-5xl font-bold text-white">
               Aimé Damien
             </h1>
-            <p className="text-white text-3xl">
+            <p className="text-3xl text-white">
               Ingénieur en Génie Informatique & Télécommunication
             </p>
           </div>
         </div>
 
         {/* Slide 2 - Compétences */}
-        <div>
+        <div className="relative h-[80vh]">
           <img 
             src="/assets/2.jpeg" 
             alt="Slide 2" 
-            className="w-screen h-screen object-cover" 
+            className="object-cover w-full h-full" 
           />
-          <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center px-4">
-            <h1 className="text-white text-5xl font-bold mb-4">
+          <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center bg-black/50">
+            <h1 className="mb-4 text-5xl font-bold text-white">
               Développement & Innovation
             </h1>
-            <p className="text-white text-3xl max-w-2xl">
+            <p className="max-w-2xl text-3xl text-white">
               Passionné par les nouvelles technologies, je conçois des solutions
               en <span className="font-semibold">développement web, mobile et systèmes de télécommunication</span>.
             </p>
@@ -49,23 +49,23 @@ export default function Carrousels() {
         </div>
 
         {/* Slide 3 - Contact */}
-        <div>
+        <div className="relative h-[80vh]">
           <img 
             src="/assets/3.jpeg" 
             alt="Slide 3" 
-            className="w-screen h-screen object-cover" 
+            className="object-cover w-full h-full" 
           />
-          <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center px-4">
-            <h1 className="text-white text-5xl font-bold mb-4">
+          <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center bg-black/50">
+            <h1 className="mb-4 text-5xl font-bold text-white">
               Travaillons Ensemble
             </h1>
-            <p className="text-white text-3xl max-w-2xl mb-6">
+            <p className="max-w-2xl mb-6 text-3xl text-white">
               Vous recherchez un profil polyvalent en informatique et télécommunication ?
               Je suis prêt à collaborer sur vos projets innovants.
             </p>
             <a 
               href="#contact" 
-              className="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition"
+              className="px-6 py-3 text-lg font-semibold text-white transition bg-blue-600 rounded-lg hover:bg-blue-700"
             >
               Me Contacter
             </a>
