@@ -6,6 +6,7 @@ import Navbars from "./components/layouts/Navbar";
 import Footer from "./components/layouts/footer";
 import About from "./components/About";
 
+
 function App() {
   return (
       <>
@@ -13,6 +14,7 @@ function App() {
       <Carrousels />
       <Projects />
       <About />
+      <Herosection />
       <Footer />
       
       

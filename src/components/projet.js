@@ -34,7 +34,7 @@ export default function Projects() {
             <Card 
               key={index}
               
-              className="duration-300 bg-gray-700 text-whitetransition-transform hover:scale-105"
+              className="duration-300 bg-gray-700 text-whitetransition-transform hover:scale-125"
               renderImage={() => (
                 <img 
                   src={project.image} 
