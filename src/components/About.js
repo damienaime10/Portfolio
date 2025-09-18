@@ -1,7 +1,9 @@
 import React from 'react'
+import Info from './Info'
 
 export default function About() {
   return (
+    <>
     <div className="py-16 bg-slate-300">
       {/* Conteneur centré */}
       <div className="container flex flex-col items-center max-w-5xl gap-10 px-6 mx-auto md:flex-row">
@@ -34,5 +36,11 @@ export default function About() {
         </div>
       </div>
     </div>
+
+    <div>
+      <Info/>
+    </div>
+    </>
+    
   )
 }

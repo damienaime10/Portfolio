@@ -5,8 +5,20 @@ module.exports = {
     "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}" // Flowbite
   ],
   theme: {
-    extend: {}, // tu peux ajouter tes personnalisations ici
+    extend: {
+      animation: {
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-50%)' },
+        }
+      }   
+    }, // tu peux ajouter tes personnalisations ici
+    
   },
+  
   plugins: [
     require("flowbite/plugin","daisyui") // plugin Flowbite pour Tailwind
   ],
